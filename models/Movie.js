@@ -11,7 +11,7 @@ const movieSchema = new Schema({
         required: true
     },
     year: {
-        type: String,
+        type: Number,
         required: true
     },
     plot: {
@@ -27,4 +27,3 @@ const movieSchema = new Schema({
 })
 
 module.exports = mongoose.model('Movie', movieSchema)
-
