@@ -1,24 +1,13 @@
-function staircase (n){
-   
-    for (let i=1; i<=n; i++)
-{
-    console.log(' '.repeat(n-i)+'#'.repeat(i))}
-}// function plusMinus(n) {
-//     let arrr=""
-//     for (let i=1; i <= n ; i++){
-//         //console.log('#')
-//      for (let j=n-1 ; j>=i; j++)
-//      arrr+='5'
-//      console.log(arrr)
+function plusMinus (n){
+   let ar = ""
+   let arr=""
+    for (let i=1; i<=n; i++){
+    
+        arr="".padStart(n-i,' ')
+        ar = "".padStart(i,'#')
+        console.log(arr+ar)
 
+    } 
 
-//         for (let j = 1; j <= i; j++)
-//             arrr+='#'
-//     }
-//     output +="\n"
-
-// console.log(arrr)
-
-
-// }
-// plusMinus(4)
+}
+ plusMinus(7)
